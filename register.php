@@ -44,10 +44,10 @@ if(isset($_POST['btn'])){
           // $mail = new PHPMailer;
           
           // $mail->isSMTP();                                      // Set mailer to use SMTP
-          // $mail->Host = 'smtp.mailgun.org';                     // Specify main and backup SMTP servers
+          // $mail->Host = '';                     // Specify main and backup SMTP servers
           // $mail->SMTPAuth = true;                               // Enable SMTP authentication
-          // $mail->Username = 'postmaster@peer-connect.ml';   // SMTP username
-          // $mail->Password = 'f2b716eecc3fbe4bc36a549364673699-07e45e2a-09c3ed68';                           // SMTP password
+          // $mail->Username = '';   // SMTP username
+          // $mail->Password = '';                           // SMTP password
           // $mail->SMTPSecure = 'tls';                            // Enable encryption, only 'tls' is accepted
           
           // $mail->From = 'we@peer-connect.ml';
