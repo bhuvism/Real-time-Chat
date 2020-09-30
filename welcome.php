@@ -1,5 +1,9 @@
 <?php
-$conn = new mysqli("localhost","root","75;#)dFys_ei","social");
+$server = "localhost";
+$mysql_username = "<your_mysql_username>";
+$mysql_password = "<your_mysql_password>";
+$db_name = "<your_db_name>";
+$conn = new mysqli($server,$mysql_username,$mysql_password,$db_name);
 $conn->set_charset("utf8mb4");
 session_start();
 ini_set('display_errors', 1);
