@@ -1,5 +1,9 @@
 <?php 
-$conn = new mysqli("localhost","root","75;#)dFys_ei","social");
+$server = "localhost";
+$mysql_username = "<your_mysql_username>";
+$mysql_password = "<your_mysql_password>";
+$db_name = "<your_db_name>";
+$conn = new mysqli($server,$mysql_username,$mysql_password,$db_name);
 if(isset($_POST['btn'])){
     $username = $_POST['username'];
     $pass1 = $_POST['pass1'];
