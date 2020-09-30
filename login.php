@@ -5,7 +5,11 @@ if(isset($_SESSION['userid'])){
   header('location:welcome.php');
 }
 if(isset($_POST['btn'])){
-    $conn = new mysqli("localhost","root","75;#)dFys_ei","social");
+    $server = "localhost";
+$mysql_username = "<your_mysql_username>";
+$mysql_password = "<your_mysql_password>";
+$db_name = "<your_db_name>";
+$conn = new mysqli($server,$mysql_username,$mysql_password,$db_name);
     if(!$conn){
         echo '<script>alert("Database not connected")</script>';
         echo '<script>document.location.replace("login.php");</script>';
